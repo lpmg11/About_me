@@ -4,7 +4,7 @@ new Vue({
       header: {
         firstName: "Luis",
         lastName: "Pablo",
-        title: "Junior developer in Transexpress Guatemala",
+        title: "Junior developer of Transexpress Guatemala",
         contact: [
           {
             title: "lpmg11manrique@gmail.com",
