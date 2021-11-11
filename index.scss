@@ -1,0 +1,146 @@
+$c-border: #ccc;
+$c-primary: #53c6ff;
+$c-font: #fff;
+$c-bg: #21212d;
+$f-primary: 'Roboto', sans-serif;
+$f-secondary: 'Quattrocento', serif;
+$f-base: 14px;
+$f-xs: 0.7rem;
+$f-sm: 0.8rem;
+$f-md: 1rem;
+$f-lg: 1.1rem;
+$f-xl: 2.6rem;
+
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  background: $c-bg;
+  color: $c-font;
+  font-family: $f-primary;
+  font-size: $f-base;
+  padding: 2rem;
+  line-height: 1.2em;
+}
+
+header {
+  text-align: center;
+  
+  h1 {
+    font-size: $f-xl;
+    margin-bottom: 0.4em;
+    
+    span {
+      font-weight: 100;
+    }
+  }
+  
+  h2 {
+    margin: 4px;
+    color: $c-primary;
+    font-size: $f-lg;
+    font-weight: 600;
+    font-family: $f-secondary;
+  }
+  
+  a {
+    color: $c-font;
+    font-size: $f-md;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 1.3rem;
+    
+    i {
+      padding: 0 0.2rem 0 0.6rem;
+    }
+  }
+}
+
+section {
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .header, aside {
+    width: 50%;
+  }
+  
+  aside {
+    padding-top: 1rem;
+    text-align: right;
+    font-style: italic;
+    
+    span {
+      display: block;
+      
+      &:first-child {
+        color: $c-primary;
+      }
+    }
+  }
+  
+  h2 {
+    margin: 1.5rem 0 -0.4rem;
+    font-size: $f-lg;
+    font-weight: 600;
+    color: $c-primary;
+    font-family: $f-secondary;
+  }
+  
+  h3 {
+    margin: 1rem 0 0;
+    font-size: $f-md;
+    font-weight: 900;
+    font-family: $f-secondary;
+  }
+  
+  h4 {
+    margin: 0;
+    font-size: $f-xs;
+    font-family: $f-secondary;
+    text-transform: uppercase;
+    
+    &:first-letter {
+      font-size: $f-sm;
+    }
+  }
+  
+  p {
+    position: relative;
+    width: 100%;
+    padding-left: 0.8rem;
+    margin: 0.3rem 0 0;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0.2rem;
+      top: 0.4rem;
+      background-color: $c-font;
+      border-radius: 100%;
+      padding: 0.1rem;
+    }
+  }
+  
+  table {
+    th {
+      text-align: right;
+      white-space: nowrap;
+      font-weight: bold;
+      font-family: $f-secondary;
+    }
+    
+    th, td {
+      vertical-align: top;
+      padding: 0.1rem 0.4rem;
+    }
+    
+    &.subtable {
+      margin: 0.5rem 4rem 0.5rem 2rem;
+      
+      th {
+        font-family: $f-primary;
+      }
+    }
+  }
+}
