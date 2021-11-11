@@ -76,7 +76,7 @@ new Vue({
               title: "Transexpress Guatemala",
               subtitle: "Junior developer",
               location: "Guatemala, City",
-              date: "July 2020 - Present",
+              date: "July 2021 - Present",
               content: [
                 "Working developing system requirements for internal company processes and adding functionalities to the client platform.",
                 "Emphasizing on improving the user experience and optimizing internal processes."
