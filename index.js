@@ -24,7 +24,7 @@ new Vue({
           subsections: [
             {
               title: "University student of Systems Engineering",
-              subtitle: "Universidad Mariano Galvez de Guatemala",
+              subtitle: "Mariano Galvez University of Guatemala",
               content: [
                 
               ]
