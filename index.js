@@ -3,7 +3,7 @@ new Vue({
     data: {
       header: {
         firstName: "Luis",
-        lastName: "Pablo",
+        lastName: "Manrique",
         title: "Junior developer of Transexpress Guatemala",
         contact: [
           {
