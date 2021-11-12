@@ -16,6 +16,11 @@ new Vue({
             link: "https://github.com/lpmg11",
             icon: "fa-github"
           },
+          {
+            title: "WhatsApp",
+            link: "https://wa.me/50252911416",
+            icon: "fa-whatsapp"
+          },
         ]
       },
       sections: [
