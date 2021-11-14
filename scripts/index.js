@@ -7,12 +7,12 @@ new Vue({
         title: "Junior developer of Transexpress Guatemala",
         contact: [
           {
-            title: "lpmg11manrique@gmail.com",
+            title: "eMail",
             link: "mailto:lpmg11manrique@gmail.com",
             icon: "fa-envelope-o"
           },
           {
-            title: "github.com/lpmg11",
+            title: "Github",
             link: "https://github.com/lpmg11",
             icon: "images/github.png"
           },
@@ -20,6 +20,11 @@ new Vue({
             title: "WhatsApp",
             link: "https://wa.me/50252911416",
             icon: "fa-whatsapp"
+          },
+          {
+            title: "Linkedin",
+            link: "https://www.linkedin.com/in/lpmg11/",
+            icon: "fa-linkedin"
           },
         ]
       },

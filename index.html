@@ -1,29 +1,26 @@
 <html>
-<head>
-   <title>My personal web site</title>
-   <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-   
-   <div id="page">
+  <head>
+    <title>My personal web site</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+    <div id="page">
       <header>
         <h1>
           <span>{{ header.firstName }}</span>
           {{ header.lastName }}
-       </h1>
+        </h1>
         <h2>{{ header.title }}</h2>
         <div>
-          <a
-            v-for="contact in header.contact"
-            :href="contact.link"
-          >
+          <a v-for="contact in header.contact" :href="contact.link">
             <i :class="['fa', contact.icon]"></i>
             {{ contact.title }}
           </a>
         </div>
       </header>
-    
+
       <section v-for="section in sections">
         <h2>{{ section.title }}</h2>
         <div v-for="sub in section.subsections">
@@ -36,23 +33,17 @@
             <span>{{ sub.date }}</span>
           </aside>
           <template v-for="content in sub.content">
-            <p v-if="typeof content === 'string'">
-              {{ content }}
-            </p>
-            <table
-              v-else
-              :class="{ subtable: sub.content.length > 1 }"
-            >
+            <p v-if="typeof content === 'string'">{{ content }}</p>
+            <table v-else :class="{ subtable: sub.content.length > 1 }">
               <tr v-for="row in content">
                 <th>{{ row[0] }}</th>
-                <td v-for="cell in row.slice(1)">
-                  {{ cell }}
-                </td>
+                <td v-for="cell in row.slice(1)">{{ cell }}</td>
               </tr>
             </table>
           </template>
         </div>
       </section>
-      <script src="scripts/index.js"></script>
-</body>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
 </html>
