@@ -15,7 +15,8 @@
         <h2>{{ header.title }}</h2>
         <div>
           <a v-for="contact in header.contact" :href="contact.link">
-            <i :class="['fa', contact.icon]"></i>
+          <!--<i :class="['fa', contact.icon]"></i>-->
+          <img :src="contact.icon">
             {{ contact.title }}
           </a>
         </div>
