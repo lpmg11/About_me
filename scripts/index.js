@@ -14,7 +14,7 @@ new Vue({
           {
             title: "Github",
             link: "https://github.com/lpmg11",
-            icon: "images/github.png"
+            icon: "fa-github"
           },
           {
             title: "WhatsApp",
